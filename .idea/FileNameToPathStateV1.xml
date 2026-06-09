@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FileNameToPathState">
+    <option name="fileNameToPathMap">
+      <map>
+        <entry key="config/DatabaseConfig.java Lines(1-41)">
+          <value>
+            <list>
+              <option value="Downloads\java legacy migration\opus\order-service\src\main\java\com\ecommerce\order\config\DatabaseConfig.java" />
+              <option value="Downloads\java legacy migration\opus\order-service\src\main\java\com\ecommerce\order\config\DatabaseConfig.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="controller/OrderController.java Lines(1-147)">
+          <value>
+            <list>
+              <option value="Downloads\java legacy migration\opus\order-service\src\main\java\com\ecommerce\order\controller\OrderController.java" />
+              <option value="Downloads\java legacy migration\opus\order-service\src\main\java\com\ecommerce\order\controller\OrderController.java" />
+              <option value="Downloads\java legacy migration\opus\order-service\src\main\java\com\ecommerce\order\controller\OrderController.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="controller/OrderController.java Lines(113-113)">
+          <value>
+            <list>
+              <option value="Downloads\java legacy migration\opus\order-service\src\main\java\com\ecommerce\order\controller\OrderController.java" />
+              <option value="Downloads\java legacy migration\opus\order-service\src\main\java\com\ecommerce\order\controller\OrderController.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="controller/OrderControllerTest.java Lines(1-125)">
+          <value>
+            <list>
+              <option value="Downloads\java legacy migration\opus\order-service\src\test\java\com\ecommerce\order\controller\OrderControllerTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="controller/OrderControllerTest.java Lines(1-127)">
+          <value>
+            <list>
+              <option value="Downloads\java legacy migration\opus\order-service\src\test\java\com\ecommerce\order\controller\OrderControllerTest.java" />
+              <option value="Downloads\java legacy migration\opus\order-service\src\test\java\com\ecommerce\order\controller\OrderControllerTest.java" />
+              <option value="Downloads\java legacy migration\opus\order-service\src\test\java\com\ecommerce\order\controller\OrderControllerTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="repository/OrderRepositoryTest.java Lines(1-76)">
+          <value>
+            <list>
+              <option value="Downloads\java legacy migration\opus\order-service\src\test\java\com\ecommerce\order\repository\OrderRepositoryTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="repository/OrderRepositoryTest.java Lines(1-81)">
+          <value>
+            <list>
+              <option value="Downloads\java legacy migration\opus\order-service\src\test\java\com\ecommerce\order\repository\OrderRepositoryTest.java" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="workspaceFileNameToPathMap">
+      <map>
+        <entry key="ecommerce/order/OrderServiceApplication.java Lines(1-13)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/OrderServiceApplication.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/OrderServiceApplication.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/OrderServiceApplication.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/dto/CreateOrderRequest.java Lines(1-39)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/CreateOrderRequest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/dto/CreateOrderResponse.java Lines(1-74)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/CreateOrderResponse.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/CreateOrderResponse.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/dto/OrderDTO.java Lines(1-41)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderDTO.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderDTO.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderDTO.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/dto/OrderDTO.java Lines(1-88)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderDTO.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/dto/OrderItemDTO.java Lines(1-37)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderItemDTO.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderItemDTO.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/dto/OrderItemDTO.java Lines(1-69)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderItemDTO.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/dto/UpdateOrderStatusRequest.java Lines(1-29)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/UpdateOrderStatusRequest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/entity/Order.java Lines(1-124)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/Order.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/Order.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/entity/Order.java Lines(1-37)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/Order.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/Order.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/entity/Order.java Lines(1-77)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/Order.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/entity/OrderItem.java Lines(1-43)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/OrderItem.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/OrderItem.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="model/entity/OrderItem.java Lines(1-81)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/OrderItem.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="opus/order-service/README.md Lines(1-33)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/README.md" />
+            </list>
+          </value>
+        </entry>
+        <entry key="opus/order-service/README.md Lines(1-45)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/README.md" />
+              <option value="$PROJECT_DIR$/README.md" />
+            </list>
+          </value>
+        </entry>
+        <entry key="opus/order-service/README.md Lines(33-45)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/README.md" />
+            </list>
+          </value>
+        </entry>
+        <entry key="opus/order-service/pom.xml Lines(1-153)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/pom.xml" />
+              <option value="$PROJECT_DIR$/pom.xml" />
+            </list>
+          </value>
+        </entry>
+        <entry key="opus/order-service/pom.xml Lines(29-148)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/pom.xml" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/config/DatabaseConfig.java Lines(1-34)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/DatabaseConfig.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/config/DatabaseConfig.java Lines(1-40)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/DatabaseConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/DatabaseConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/DatabaseConfig.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/config/KafkaProducerConfig.java Lines(1-40)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/KafkaProducerConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/KafkaProducerConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/KafkaProducerConfig.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/config/SecurityConfig.java Lines(1-43)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SecurityConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SecurityConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SecurityConfig.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/config/SwaggerConfig.java Lines(1-35)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SwaggerConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SwaggerConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SwaggerConfig.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/constants/ApiConstants.java Lines(1-23)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/ApiConstants.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/ApiConstants.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/constants/OrderStatus.java Lines(1-24)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/OrderStatus.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/OrderStatus.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderController.java Lines(1-68)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderController.java Lines(119-142)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderController.java Lines(144-147)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderController.java Lines(70-142)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderController.java Lines(70-98)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderControllerTest.java Lines(1-125)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/controller/OrderControllerTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/controller/OrderControllerTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderControllerTest.java Lines(1-56)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/controller/OrderControllerTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/controller/OrderControllerTest.java Lines(24-56)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/controller/OrderControllerTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/exception/GlobalExceptionHandler.java Lines(1-27)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/GlobalExceptionHandler.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/exception/GlobalExceptionHandler.java Lines(1-53)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/GlobalExceptionHandler.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/exception/GlobalExceptionHandler.java Lines(1-80)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/GlobalExceptionHandler.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/exception/OrderServiceException.java Lines(1-29)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/OrderServiceException.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/OrderServiceException.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/repository/OrderItemRepository.java Lines(1-22)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderItemRepository.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderItemRepository.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/repository/OrderRepository.java Lines(1-39)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderRepository.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderRepository.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderRepository.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/repository/OrderRepository.java Lines(1-42)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderRepository.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/repository/OrderRepositoryTest.java Lines(1-67)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/repository/OrderRepositoryTest.java Lines(1-76)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/security/JwtAuthenticationFilter.java Lines(1-26)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/security/JwtAuthenticationFilter.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/security/JwtAuthenticationFilter.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/KafkaEventPublisher.java Lines(1-32)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/KafkaEventPublisher.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/KafkaEventPublisher.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderService.java Lines(1-34)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderService.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderService.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderService.java Lines(1-49)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderService.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceImpl.java Lines(1-28)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceImpl.java Lines(1-55)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceImpl.java Lines(1-74)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceImpl.java Lines(105-160)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceImpl.java Lines(131-160)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceImpl.java Lines(53-74)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceImpl.java Lines(77-103)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceTest.java Lines(1-118)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceTest.java Lines(1-124)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceTest.java Lines(1-33)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceTest.java Lines(64-124)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java" />
+            </list>
+          </value>
+        </entry>
+        <entry key="order/service/OrderServiceTest.java Lines(90-118)">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VotesMapPersistentState">
+    <option name="votesMap">
+      <map>
+        <entry key="0a8e1aa3-b427-41a6-ac71-3bf63a619844">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-28T04:53:45.386509300Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="15091e1c-ccbd-41e6-a40b-fd459a6cf790">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-27T08:09:03.578134Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="38f2f6a4-ba5e-4285-a18d-008eb0c37da6">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-28T05:09:03.670125Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="56593db0-aa3f-464b-8497-f932f15bbdf9">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-28T05:46:22.686247300Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="6a0b6784-0bb9-410a-97c5-0ad17516eade">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-28T04:59:26.909930600Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="7147437a-d07b-477c-948a-c520439a4b12">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-28T05:26:58.765262200Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="7603e564-e5d1-45dc-85f2-90753763ce23">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-27T08:13:26.240294900Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="98baaf95-5eb0-4020-b140-fda41c9de5ef">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-28T05:15:06.041461500Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="b9f0fa46-7661-44ba-bfbd-0f7d18396e44">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-29T13:47:01.186924100Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="bc8250e7-5540-4250-9956-7a456859648f">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-26T11:41:06.875737700Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="c96257cc-ab8b-4ba4-aed4-c0bc5e49d59b">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-28T05:02:26.023212700Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+        <entry key="f0e269cf-7253-4cd3-9aad-45e9e38e122e">
+          <value>
+            <VoteCacheDTO>
+              <option name="voteTime" value="2026-05-26T11:43:07.336433500Z" />
+            </VoteCacheDTO>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

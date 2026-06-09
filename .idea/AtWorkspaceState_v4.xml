@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AtWorkspaceState">
+    <option name="embeddingIds">
+      <map>
+        <entry key="order-service">
+          <value>
+            <map>
+              <entry key="$PROJECT_DIR$/.slingshot/prompts/sample.prompt.md">
+                <value>
+                  <list>
+                    <option value="9d876dd6-ad70-43bf-a81f-3ec41bd07b9e" />
+                    <option value="f4f48a9d-0b10-48cf-beb1-61c1a5d320fe" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/README.md">
+                <value>
+                  <list>
+                    <option value="23c1cde5-27f0-43ad-bb41-4798af278e20" />
+                    <option value="fdfb4998-9b45-4116-912f-72eb334287bc" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/pom.xml">
+                <value>
+                  <list>
+                    <option value="d5e97149-4d72-4275-9a14-717d3e957a98" />
+                    <option value="4ffcf2ba-f202-4d63-99ff-acd06af905bb" />
+                    <option value="bacff91a-541c-4da3-9e7d-37f033d57dbd" />
+                    <option value="335655d1-fd54-4ac2-bcce-8f9b402285e9" />
+                    <option value="338f2802-8b99-4c04-b217-0cb03053de74" />
+                    <option value="0b812f8b-14a9-43c1-b324-5d2a2cde098b" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/OrderServiceApplication.java">
+                <value>
+                  <list>
+                    <option value="7bfe65d6-b9cc-4267-8c22-9de9f791bedc" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/DatabaseConfig.java">
+                <value>
+                  <list>
+                    <option value="8275b120-8df1-4ba9-9327-3dc93b2858e2" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/KafkaProducerConfig.java">
+                <value>
+                  <list>
+                    <option value="5b731752-3d68-4d57-95cf-222676ed0b09" />
+                    <option value="274ebb0a-1edc-43f2-a50d-dd280fbb2ce5" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SecurityConfig.java">
+                <value>
+                  <list>
+                    <option value="677f5a14-cec8-4935-8b8e-1f04922feb71" />
+                    <option value="f4fbe6d2-613b-4077-977b-44265d13a03d" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SwaggerConfig.java">
+                <value>
+                  <list>
+                    <option value="5bdf0451-0c64-4dbc-a248-df964b4c856c" />
+                    <option value="b343a7cd-4f51-42fd-84b7-85209b8fc4a8" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/ApiConstants.java">
+                <value>
+                  <list>
+                    <option value="056c38d9-3253-433c-be80-3ce5aeee0360" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/KafkaTopics.java">
+                <value>
+                  <list>
+                    <option value="5fcea1ae-a477-4de5-a5c5-6ee22d9dd524" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/OrderStatus.java">
+                <value>
+                  <list>
+                    <option value="9f47e67d-058f-4c65-8aa7-c21384f59810" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java">
+                <value>
+                  <list>
+                    <option value="2ab00537-8ee4-4777-9eb3-e17a3e838771" />
+                    <option value="1cf17346-2203-4d13-b062-29628884f60a" />
+                    <option value="c078e6c6-af62-44e6-b1e6-32c3dcdbb915" />
+                    <option value="25ea987d-4503-42ac-b5e5-6b9da8effff0" />
+                    <option value="a70c31ed-4df8-4a42-863d-17c11d9b3b3f" />
+                    <option value="4c434bae-3980-487b-928e-441253aa2b47" />
+                    <option value="13e93342-12a8-4ba2-8f26-4564d2d20f98" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/GlobalExceptionHandler.java">
+                <value>
+                  <list>
+                    <option value="6aa7e53b-5c35-4e58-bccd-42065babd8fb" />
+                    <option value="8b87524d-e734-4e27-bd60-2b2f6cab84cf" />
+                    <option value="df364355-84f6-4c83-bf96-2f6fb80a01f7" />
+                    <option value="baab6a82-832d-4cc8-ad82-92b387f4da1c" />
+                    <option value="99e97e3c-24b8-4932-928f-fac31dddd2ee" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/InvalidOrderException.java">
+                <value>
+                  <list>
+                    <option value="14912e73-2fbd-42ad-a180-93ada26c72f0" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/OrderNotFoundException.java">
+                <value>
+                  <list>
+                    <option value="ce3a786f-3d76-491f-867c-a515b201b84e" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/OrderServiceException.java">
+                <value>
+                  <list>
+                    <option value="e0bbe8f9-8a00-4741-946b-669bb90727a1" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/CreateOrderRequest.java">
+                <value>
+                  <list>
+                    <option value="fc96b2b3-9ed0-4a74-86d7-f32d4e4265bf" />
+                    <option value="c70bb28a-ad5f-4520-8087-12dbfaf1ee65" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/CreateOrderResponse.java">
+                <value>
+                  <list>
+                    <option value="256aa1cf-ac97-4577-97bc-7edea23cea8c" />
+                    <option value="108c23d3-c09c-41ae-b0e0-87b039ed639e" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderDTO.java">
+                <value>
+                  <list>
+                    <option value="8281f253-9d7b-4ff4-8ef1-9ddd7a627bfb" />
+                    <option value="28df3cd8-ea6c-40de-903c-78ee9281aed4" />
+                    <option value="fe9b913d-d57f-4b25-a134-f3fd4c5c1a7e" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderItemDTO.java">
+                <value>
+                  <list>
+                    <option value="6f3cc9c0-0e39-47bd-bbda-09878413d7ce" />
+                    <option value="1e150f65-c4b6-484a-9e3c-b64ba1a34640" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/UpdateOrderStatusRequest.java">
+                <value>
+                  <list>
+                    <option value="fd4de00f-1c64-48eb-b341-0ab2d3472d1b" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/Order.java">
+                <value>
+                  <list>
+                    <option value="cf3559f4-f16c-4cda-98ae-ad48cdfbd1da" />
+                    <option value="cde3ce99-a484-40e4-87fe-d7420af02903" />
+                    <option value="98d0c158-0031-4ad7-93e4-76e52bec2159" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/OrderItem.java">
+                <value>
+                  <list>
+                    <option value="9e5570f4-b79c-4682-af44-6bc040247d41" />
+                    <option value="766da456-86ab-4e95-bfa1-c3b1db9d3696" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/event/OrderCreatedEvent.java">
+                <value>
+                  <list>
+                    <option value="49e87ac6-b2cf-4508-86cf-557d24d0f96a" />
+                    <option value="736e476f-259c-4d04-8871-8dd72bd510cd" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderItemRepository.java">
+                <value>
+                  <list>
+                    <option value="bdd87345-4a52-496f-9a5a-8a3f3c8558f4" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderRepository.java">
+                <value>
+                  <list>
+                    <option value="46ce0048-8dd4-4c3b-9f0e-340b0ad4beed" />
+                    <option value="b96f08c5-d792-4686-abbf-ce935a59316d" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/security/JwtAuthenticationFilter.java">
+                <value>
+                  <list>
+                    <option value="0eddb1bb-305e-4138-846d-d50be81e3f1a" />
+                    <option value="e4050b67-1cd4-4b76-8f54-36c2ec670417" />
+                    <option value="104430d0-239b-4155-a00a-7026bc28d2e2" />
+                    <option value="e84a9ae8-34a5-4053-9aa2-c48b3f4db8ca" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/security/SecurityUtils.java">
+                <value>
+                  <list>
+                    <option value="6a7d6af3-daaf-42cc-8b02-21245eeed5a6" />
+                    <option value="f069d2a0-33de-4a8a-a98d-e046da844f46" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/KafkaEventPublisher.java">
+                <value>
+                  <list>
+                    <option value="5c080722-bf3c-4888-8c4e-50a75a9c0973" />
+                    <option value="bcbed4f7-a9f9-4470-a18e-53d262db98a3" />
+                    <option value="a9d1c3e3-fcb2-4d79-bc3a-997d570aff4f" />
+                    <option value="f8a7b70a-c8ab-4d34-bb5a-45005aa6f9ce" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderService.java">
+                <value>
+                  <list>
+                    <option value="7134465a-7ecc-43aa-b9d1-dc9e5c885e73" />
+                    <option value="c8455a46-bb97-4481-9362-4dcbca77cc63" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java">
+                <value>
+                  <list>
+                    <option value="2dbdf87a-be31-420d-bc0b-e0d2d2477da0" />
+                    <option value="e844f986-f61f-4a95-8c76-54841e38cdf0" />
+                    <option value="6b2af409-f9c9-45fe-865a-a94096767b76" />
+                    <option value="52747c87-3e87-4279-bc26-8570cf6a4492" />
+                    <option value="cd5ff4ae-6e55-4e54-8e75-d28836a7673a" />
+                    <option value="ea9d3c8d-5779-4509-8fc6-893f661d887d" />
+                    <option value="6e75ac6b-08cd-4d6f-9798-5f414aa0b5cb" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/test/java/com/ecommerce/order/controller/OrderControllerTest.java">
+                <value>
+                  <list>
+                    <option value="ec2e05fe-face-4b3b-bb5e-793d1fae2fa8" />
+                    <option value="4fcee5a7-2340-49ab-a1ce-94a0761b4a94" />
+                    <option value="23253663-d62e-4119-b3e3-a811f6028d42" />
+                    <option value="918c8772-91bf-4630-840e-3d1fd3334c7f" />
+                    <option value="916eff7a-daac-4372-a5b1-c7edf4ffd931" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java">
+                <value>
+                  <list>
+                    <option value="0dae27f9-0154-4a6e-805b-4e0b7634e742" />
+                    <option value="865973df-c50f-4c96-b661-e1689b82e809" />
+                    <option value="18225162-8227-4471-b834-3bbf1bb859b8" />
+                  </list>
+                </value>
+              </entry>
+              <entry key="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java">
+                <value>
+                  <list>
+                    <option value="73c243c6-d552-45da-84e4-135406ddc429" />
+                    <option value="1bc08e26-6be6-4745-ad95-7de30f263042" />
+                    <option value="f7c6bb11-5fed-4e00-8a03-acc7192c1ca6" />
+                    <option value="a5aee65c-e29b-433b-8128-e17aca6b4c11" />
+                    <option value="14735882-32fd-4505-9c1a-c4c330e17160" />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="timeWhenWorkspaceWasLastUpdated">
+      <map>
+        <entry key="order-service" value="1780564226591" />
+      </map>
+    </option>
+    <option name="collectionName">
+      <map>
+        <entry key="order-service" value="cdd35372-38e2-47af-9ef6-8772f186d1a6_order-service" />
+      </map>
+    </option>
+    <option name="previouslyAddedFiles">
+      <map>
+        <entry key="order-service">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/.slingshot/prompts/sample.prompt.md" />
+              <option value="$PROJECT_DIR$/README.md" />
+              <option value="$PROJECT_DIR$/pom.xml" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/OrderServiceApplication.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/DatabaseConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/KafkaProducerConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SecurityConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/config/SwaggerConfig.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/ApiConstants.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/KafkaTopics.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/constants/OrderStatus.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/controller/OrderController.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/GlobalExceptionHandler.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/InvalidOrderException.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/OrderNotFoundException.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/exception/OrderServiceException.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/CreateOrderRequest.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/CreateOrderResponse.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderDTO.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/OrderItemDTO.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/dto/UpdateOrderStatusRequest.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/Order.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/entity/OrderItem.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/model/event/OrderCreatedEvent.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderItemRepository.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/repository/OrderRepository.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/security/JwtAuthenticationFilter.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/security/SecurityUtils.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/KafkaEventPublisher.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderService.java" />
+              <option value="$PROJECT_DIR$/src/main/java/com/ecommerce/order/service/OrderServiceImpl.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/controller/OrderControllerTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/repository/OrderRepositoryTest.java" />
+              <option value="$PROJECT_DIR$/src/test/java/com/ecommerce/order/service/OrderServiceTest.java" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="embeddingModelName">
+      <map>
+        <entry key="order-service" value="text-embedding-3-large" />
+      </map>
+    </option>
+    <option name="numberOfDimensions">
+      <map>
+        <entry key="order-service" value="3072" />
+      </map>
+    </option>
+  </component>
+</project>
