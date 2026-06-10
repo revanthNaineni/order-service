@@ -61,7 +61,7 @@ public class KafkaEventPublisher {
             //Handle success & failure asynchronously
             future.whenComplete((result, ex) -> {
                 if (ex != null) {
-                    logger.error("Failed to publish OrderCreatedEvent for order ID: {}",
+                    logger.error("Failed to publish OrderCreatedEvent for order Id: {}",
                             order.getOrderId(), ex);
                 } else {
                     logger.info("Published OrderCreatedEvent for order ID: {}, partition={}, offset={}",
