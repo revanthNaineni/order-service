@@ -432,6 +432,81 @@
             </FileEntry>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/KafkaEventPublisher.java">
+          <value>
+            <FileEntry>
+              <option name="meta">
+                <FileMeta>
+                  <option name="timeStamp" value="1781098922683" />
+                  <option name="hash" value="1988028129" />
+                </FileMeta>
+              </option>
+              <option name="records">
+                <list>
+                  <SymbolRecordBean>
+                    <option name="name" value="KafkaEventPublisher" />
+                    <option name="kind" value="CLASS" />
+                    <option name="filePath" value="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/KafkaEventPublisher.java" />
+                    <option name="startLine" value="15" />
+                    <option name="endLine" value="57" />
+                    <option name="endCharacter" value="1" />
+                    <option name="language" value="java" />
+                  </SymbolRecordBean>
+                  <SymbolRecordBean>
+                    <option name="name" value="logger" />
+                    <option name="kind" value="VARIABLE" />
+                    <option name="filePath" value="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/KafkaEventPublisher.java" />
+                    <option name="startLine" value="18" />
+                    <option name="startCharacter" value="32" />
+                    <option name="endLine" value="18" />
+                    <option name="endCharacter" value="91" />
+                    <option name="language" value="java" />
+                  </SymbolRecordBean>
+                  <SymbolRecordBean>
+                    <option name="name" value="kafkaTemplate" />
+                    <option name="kind" value="VARIABLE" />
+                    <option name="filePath" value="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/KafkaEventPublisher.java" />
+                    <option name="startLine" value="20" />
+                    <option name="startCharacter" value="48" />
+                    <option name="endLine" value="20" />
+                    <option name="endCharacter" value="61" />
+                    <option name="language" value="java" />
+                  </SymbolRecordBean>
+                  <SymbolRecordBean>
+                    <option name="name" value="KafkaEventPublisher" />
+                    <option name="kind" value="CONSTRUCTOR" />
+                    <option name="filePath" value="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/KafkaEventPublisher.java" />
+                    <option name="startLine" value="22" />
+                    <option name="startCharacter" value="4" />
+                    <option name="endLine" value="24" />
+                    <option name="endCharacter" value="5" />
+                    <option name="language" value="java" />
+                  </SymbolRecordBean>
+                  <SymbolRecordBean>
+                    <option name="name" value="publishOrderHistoryCreatedEvent" />
+                    <option name="kind" value="METHOD" />
+                    <option name="filePath" value="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/KafkaEventPublisher.java" />
+                    <option name="startLine" value="33" />
+                    <option name="startCharacter" value="4" />
+                    <option name="endLine" value="56" />
+                    <option name="endCharacter" value="5" />
+                    <option name="language" value="java" />
+                  </SymbolRecordBean>
+                  <SymbolRecordBean>
+                    <option name="name" value="event" />
+                    <option name="kind" value="VARIABLE" />
+                    <option name="filePath" value="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/KafkaEventPublisher.java" />
+                    <option name="startLine" value="35" />
+                    <option name="startCharacter" value="37" />
+                    <option name="endLine" value="35" />
+                    <option name="endCharacter" value="75" />
+                    <option name="language" value="java" />
+                  </SymbolRecordBean>
+                </list>
+              </option>
+            </FileEntry>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../order-history-service/src/main/java/com/ecommerce/orderhistory/service/OrderEventConsumer.java">
           <value>
             <FileEntry>
