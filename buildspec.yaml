@@ -4,28 +4,42 @@ phases:
   install:
     runtime-versions:
       java: corretto17
+    commands:
+      - echo "Starting Docker daemon..."
+
+      # ✅ Start Docker daemon manually
+      - /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2 &
+
+      # ✅ Wait until Docker is ready
+      - timeout 15 sh -c "until docker info; do echo waiting for docker...; sleep 1; done"
 
   pre_build:
     commands:
       - echo "Login to ECR"
-      - REPOSITORY_URI=118178009836.dkr.ecr.us-east-1.amazonaws.com/order-service-repo
-      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 118178009836.dkr.ecr.us-east-1.amazonaws.com
+      - AWS_ACCOUNT_ID=118178009836
+      - AWS_REGION=us-east-1
+      - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/order-service-repo
+
+      - aws ecr get-login-password --region $AWS_REGION \
+        | docker login --username AWS \
+        --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 7)
 
   build:
     commands:
-      - echo "Docker validation"
-      - docker version
+      - echo "Checking Docker"
       - docker info
-      - docker run hello-world
 
-      - echo "Build image"
+      - docker run hello-world   # ✅ verify Docker works
+
+      - echo "Building image"
       - docker build -t $REPOSITORY_URI:latest .
-
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
 
   post_build:
     commands:
+      - echo "Pushing image"
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
 
