@@ -50,41 +50,50 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
 
       - echo "Writing image definitions artifact..."
-      - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"%s","imageUri":"%s"}]' "$CONTAINER_NAME" "$REPOSITORY_URI:$IMAGE_TAG" > imagedefinitions.json
       - cat imagedefinitions.json
 
       - echo "Who am I"
       - aws sts get-caller-identity
 
       - echo "Getting current task definition ARN from service..."
-      - CURRENT_TASK_DEF_ARN=$(aws ecs describe-services --cluster $ECS_CLUSTER --services $ECS_SERVICE --region $AWS_REGION --query 'services[0].taskDefinition' --output text)
+      - CURRENT_TASK_DEF_ARN=$(aws ecs describe-services --cluster "$ECS_CLUSTER" --services "$ECS_SERVICE" --region "$AWS_REGION" --query 'services[0].taskDefinition' --output text)
       - echo "CURRENT_TASK_DEF_ARN=$CURRENT_TASK_DEF_ARN"
 
       - echo "Fetching current task definition JSON..."
-      - aws ecs describe-task-definition --task-definition $CURRENT_TASK_DEF_ARN --region $AWS_REGION --query 'taskDefinition' > taskdef.json
+      - aws ecs describe-task-definition --task-definition "$CURRENT_TASK_DEF_ARN" --region "$AWS_REGION" --query 'taskDefinition' > taskdef.json
       - cat taskdef.json
 
       - echo "Printing taskRoleArn and executionRoleArn from current task definition..."
       - jq -r '.taskRoleArn, .executionRoleArn' taskdef.json
 
       - echo "Creating minimal valid task definition JSON..."
-      - "jq --arg IMAGE \"$REPOSITORY_URI:$IMAGE_TAG\" --arg NAME \"$CONTAINER_NAME\" '{family: .family, networkMode: .networkMode, executionRoleArn: .executionRoleArn, taskRoleArn: .taskRoleArn, requiresCompatibilities: .requiresCompatibilities, cpu: .cpu, memory: .memory, containerDefinitions: (.containerDefinitions | map(if .name == $NAME then .image = $IMAGE else . end))}' taskdef.json > new-taskdef.json"
+      - "jq --arg IMAGE \"$REPOSITORY_URI:$IMAGE_TAG\" --arg NAME \"$CONTAINER_NAME\" '{
+            family: .family,
+            containerDefinitions: (.containerDefinitions | map(if .name == $NAME then .image = $IMAGE else . end)),
+            networkMode: .networkMode,
+            executionRoleArn: .executionRoleArn,
+            taskRoleArn: .taskRoleArn,
+            requiresCompatibilities: .requiresCompatibilities,
+            cpu: .cpu,
+            memory: .memory
+          } | with_entries(select(.value != null))' taskdef.json > new-taskdef.json"
 
       - echo "Validated task definition to register"
       - cat new-taskdef.json
       - jq . new-taskdef.json
 
       - echo "Registering new task definition revision..."
-      - aws ecs register-task-definition --cli-input-json file://new-taskdef.json --region $AWS_REGION --debug > register-output.json
+      - aws ecs register-task-definition --cli-input-json file://new-taskdef.json --region "$AWS_REGION" > register-output.json
       - cat register-output.json
       - NEW_TASK_DEF_ARN=$(jq -r '.taskDefinition.taskDefinitionArn' register-output.json)
       - echo "NEW_TASK_DEF_ARN=$NEW_TASK_DEF_ARN"
 
       - echo "Updating ECS service to new task definition..."
-      - aws ecs update-service --cluster $ECS_CLUSTER --service $ECS_SERVICE --task-definition $NEW_TASK_DEF_ARN --region $AWS_REGION
+      - aws ecs update-service --cluster "$ECS_CLUSTER" --service "$ECS_SERVICE" --task-definition "$NEW_TASK_DEF_ARN" --region "$AWS_REGION"
 
       - echo "Waiting for ECS service to become stable..."
-      - aws ecs wait services-stable --cluster $ECS_CLUSTER --services $ECS_SERVICE --region $AWS_REGION
+      - aws ecs wait services-stable --cluster "$ECS_CLUSTER" --services "$ECS_SERVICE" --region "$AWS_REGION"
 
       - echo "Deployment completed successfully"
 
