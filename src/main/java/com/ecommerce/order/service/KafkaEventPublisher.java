@@ -72,7 +72,7 @@ public class KafkaEventPublisher {
                 }
             });
 
-            logger.info("Ousmane Mbappe Published OrderCreatedEvent for order ID: {}", order.getOrderId());
+            logger.info("Dembele Mbappe Published OrderCreatedEvent for order ID: {}", order.getOrderId());
         } catch (Exception e) {
             logger.error("Failed to publish OrderCreatedEvent for order ID: {}", 
                 order.getOrderId(), e);
