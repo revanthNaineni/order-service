@@ -16,7 +16,9 @@ phases:
       - /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2 &
       - timeout 30 sh -c "until docker info; do echo waiting for docker...; sleep 1; done"
       - echo Installing jq...
-      - yum install -y jq
+      - apt-get update
+      - apt-get install -y jq
+
 
   pre_build:
     commands:
