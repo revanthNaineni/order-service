@@ -70,7 +70,7 @@ phases:
       - echo Updating container image in task definition...
       - jq --arg IMAGE "$REPOSITORY_URI:$IMAGE_TAG" --arg NAME "$CONTAINER_NAME" '.containerDefinitions |= map(if .name == $NAME then .image = $IMAGE else . end) | del(.taskDefinitionArn) | del(.revision) | del(.status) | del(.requiresAttributes) | del(.compatibilities) | del(.registeredAt) | del(.registeredBy)' taskdef.json > new-taskdef.json
 
-      - echo Validated task definition to register:
+      - echo "Validated task definition to register"
       - cat new-taskdef.json
       - jq . new-taskdef.json
 
