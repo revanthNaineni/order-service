@@ -6,6 +6,7 @@ env:
     ECS_CLUSTER: ecommerce-cluster
     ECS_SERVICE: order-service-codebuild-task-service-tb6jrmmc
     CONTAINER_NAME: order-service
+    REPOSITORY_URI: 118178009836.dkr.ecr.us-east-1.amazonaws.com/order-service-repo
 
 phases:
   install:
@@ -15,74 +16,75 @@ phases:
       - echo "Starting Docker daemon..."
       - /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2 &
       - timeout 30 sh -c "until docker info; do echo waiting for docker...; sleep 1; done"
-      - echo Installing jq...
+      - echo "Installing jq..."
       - apt-get update
       - apt-get install -y jq
 
-
   pre_build:
     commands:
-      - echo Installing dependencies and building JAR...
+      - echo "Installing dependencies and building JAR..."
       - mvn clean install -DskipTests
 
-      - echo Logging in to Amazon ECR...
+      - echo "Logging in to Amazon ECR..."
       - aws --version
-      - REPOSITORY_URI=118178009836.dkr.ecr.us-east-1.amazonaws.com/order-service-repo
       - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $REPOSITORY_URI
+
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
-      - echo IMAGE_TAG=$IMAGE_TAG
+      - echo "IMAGE_TAG=$IMAGE_TAG"
 
   build:
     commands:
-      - echo Checking Docker...
+      - echo "Checking Docker..."
       - docker version
       - docker info
-      - echo Build started on `date`
-      - echo Building Docker image...
+      - echo "Build started on $(date)"
+      - echo "Building Docker image..."
       - docker build --no-cache -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
 
   post_build:
     commands:
-      - echo Build completed on `date`
-      - echo Pushing images to ECR...
+      - echo "Build completed on $(date)"
+      - echo "Pushing images to ECR..."
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:$IMAGE_TAG
 
-      - echo Writing image definitions artifact...
+      - echo "Writing image definitions artifact..."
       - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
 
-      - echo Who am I
+      - echo "Who am I"
       - aws sts get-caller-identity
 
-      - echo Getting current task definition ARN from service...
+      - echo "Getting current task definition ARN from service..."
       - CURRENT_TASK_DEF_ARN=$(aws ecs describe-services --cluster $ECS_CLUSTER --services $ECS_SERVICE --region $AWS_REGION --query 'services[0].taskDefinition' --output text)
-      - echo CURRENT_TASK_DEF_ARN=$CURRENT_TASK_DEF_ARN
+      - echo "CURRENT_TASK_DEF_ARN=$CURRENT_TASK_DEF_ARN"
 
-      - echo Fetching current task definition JSON...
+      - echo "Fetching current task definition JSON..."
       - aws ecs describe-task-definition --task-definition $CURRENT_TASK_DEF_ARN --region $AWS_REGION --query 'taskDefinition' > taskdef.json
       - cat taskdef.json
 
-      - echo Printing taskRoleArn and executionRoleArn from current task definition...
+      - echo "Printing taskRoleArn and executionRoleArn from current task definition..."
       - jq -r '.taskRoleArn, .executionRoleArn' taskdef.json
 
-      - echo Updating container image in task definition...
-      - jq --arg IMAGE "$REPOSITORY_URI:$IMAGE_TAG" --arg NAME "$CONTAINER_NAME" '.containerDefinitions |= map(if .name == $NAME then .image = $IMAGE else . end) | del(.taskDefinitionArn) | del(.revision) | del(.status) | del(.requiresAttributes) | del(.compatibilities) | del(.registeredAt) | del(.registeredBy)' taskdef.json > new-taskdef.json
+      - echo "Creating minimal valid task definition JSON..."
+      - jq --arg IMAGE "$REPOSITORY_URI:$IMAGE_TAG" --arg NAME "$CONTAINER_NAME" '{family: .family, networkMode: .networkMode, executionRoleArn: .executionRoleArn, taskRoleArn: .taskRoleArn, requiresCompatibilities: .requiresCompatibilities, cpu: .cpu, memory: .memory, containerDefinitions: (.containerDefinitions | map(if .name == $NAME then .image = $IMAGE else . end)), volumes: .volumes, placementConstraints: .placementConstraints, proxyConfiguration: .proxyConfiguration, runtimePlatform: .runtimePlatform, ephemeralStorage: .ephemeralStorage}' taskdef.json > new-taskdef.json
 
       - echo "Validated task definition to register"
       - cat new-taskdef.json
       - jq . new-taskdef.json
 
-      - echo Registering new task definition revision...
+      - echo "Registering new task definition revision..."
       - NEW_TASK_DEF_ARN=$(aws ecs register-task-definition --cli-input-json file://new-taskdef.json --region $AWS_REGION --query 'taskDefinition.taskDefinitionArn' --output text)
-      - echo NEW_TASK_DEF_ARN=$NEW_TASK_DEF_ARN
+      - echo "NEW_TASK_DEF_ARN=$NEW_TASK_DEF_ARN"
 
-      - echo Updating ECS service to new task definition...
+      - echo "Updating ECS service to new task definition..."
       - aws ecs update-service --cluster $ECS_CLUSTER --service $ECS_SERVICE --task-definition $NEW_TASK_DEF_ARN --region $AWS_REGION
 
-      - echo Waiting for ECS service to become stable...
+      - echo "Waiting for ECS service to become stable..."
       - aws ecs wait services-stable --cluster $ECS_CLUSTER --services $ECS_SERVICE --region $AWS_REGION
+
+      - echo "Deployment completed successfully"
 
 artifacts:
   files:
