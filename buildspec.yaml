@@ -68,7 +68,7 @@ phases:
       - jq -r '.taskRoleArn, .executionRoleArn' taskdef.json
 
       - echo "Creating minimal valid task definition JSON..."
-      - jq --arg IMAGE "$REPOSITORY_URI:$IMAGE_TAG" --arg NAME "$CONTAINER_NAME" '{family: .family, networkMode: .networkMode, executionRoleArn: .executionRoleArn, taskRoleArn: .taskRoleArn, requiresCompatibilities: .requiresCompatibilities, cpu: .cpu, memory: .memory, containerDefinitions: (.containerDefinitions | map(if .name == $NAME then .image = $IMAGE else . end)), volumes: .volumes, placementConstraints: .placementConstraints, proxyConfiguration: .proxyConfiguration, runtimePlatform: .runtimePlatform, ephemeralStorage: .ephemeralStorage}' taskdef.json > new-taskdef.json
+      - "jq --arg IMAGE \"$REPOSITORY_URI:$IMAGE_TAG\" --arg NAME \"$CONTAINER_NAME\" '{family: .family, networkMode: .networkMode, executionRoleArn: .executionRoleArn, taskRoleArn: .taskRoleArn, requiresCompatibilities: .requiresCompatibilities, cpu: .cpu, memory: .memory, containerDefinitions: (.containerDefinitions | map(if .name == $NAME then .image = $IMAGE else . end)), volumes: .volumes, placementConstraints: .placementConstraints, proxyConfiguration: .proxyConfiguration, runtimePlatform: .runtimePlatform, ephemeralStorage: .ephemeralStorage}' taskdef.json > new-taskdef.json"
 
       - echo "Validated task definition to register"
       - cat new-taskdef.json
